@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Minimarket.Controller.AppController">
+   <children>
+      <Pane prefHeight="40.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="btnClose" contentDisplay="CENTER" focusTraversable="false" layoutX="1240.0" layoutY="7.0" mnemonicParsing="false" onAction="#close" styleClass="close" stylesheets="@../css/app_style.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="CLOSE" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnMinimize" contentDisplay="CENTER" focusTraversable="false" layoutX="1200.0" layoutY="8.0" mnemonicParsing="false" onAction="#minimize" styleClass="minimize" stylesheets="@../css/app_style.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="MINUS" />
+               </graphic>
+            </Button>
+            <Label layoutX="20.0" layoutY="11.0" text="Minimarket">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogOut" contentDisplay="CENTER" layoutX="100.0" layoutY="7.0" mnemonicParsing="false" onAction="#logout" styleClass="sign-out" stylesheets="@../css/app_style.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="SIGN_OUT" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnRefresh" contentDisplay="CENTER" layoutX="140.0" layoutY="7.0" mnemonicParsing="false" styleClass="btn-refresh" stylesheets="@../css/app_style.css" />
+         </children></Pane>
+      <Pane layoutY="40.0" prefHeight="200.0" prefWidth="1280.0" styleClass="jumbotron" stylesheets="@../css/app_style.css">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="1.0" layoutY="240.0" prefHeight="540.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="btnCatalog" contentDisplay="TOP" focusTraversable="false" layoutX="200.0" layoutY="210.0" mnemonicParsing="false" onAction="#handlebuttonclicks" prefHeight="125.0" prefWidth="125.0" styleClass="btn-catalog" stylesheets="@../css/app_style.css" text="Katalog">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="TABLE" size="1.5em" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnProductData" contentDisplay="TOP" focusTraversable="false" layoutX="570.0" layoutY="210.0" mnemonicParsing="false" onAction="#handlebuttonclicks" prefHeight="125.0" prefWidth="125.0" styleClass="btn-product" stylesheets="@../css/app_style.css" text="Produk">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="CUBE" size="1.5em" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnTransaction" contentDisplay="TOP" focusTraversable="false" layoutX="940.0" layoutY="210.0" mnemonicParsing="false" onAction="#handlebuttonclicks" prefHeight="125.0" prefWidth="125.0" styleClass="btn-transaction" stylesheets="@../css/app_style.css" text="Transaksi">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="MONEY" size="1.5em" />
+               </graphic>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>

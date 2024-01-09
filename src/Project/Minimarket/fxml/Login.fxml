@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="640.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Minimarket.Controller.LoginController">
+   <children>
+      <Pane prefHeight="424.0" prefWidth="320.0" styleClass="left-form" stylesheets="@../css/login_style.css">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="10.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="320.0" prefHeight="424.0" prefWidth="320.0" styleClass="right-form" stylesheets="@../css/login_style.css">
+         <children>
+            <FontAwesomeIcon iconName="USER" layoutX="136.0" layoutY="124.0" size="5em" />
+            <Label layoutX="135.0" layoutY="141.0" styleClass="label_login" stylesheets="@../css/login_style.css" text="Login">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" focusTraversable="false" layoutX="60.0" layoutY="187.0" onAction="#login" prefWidth="200.0" promptText="Username" styleClass="field_username" stylesheets="@../css/login_style.css" />
+            <PasswordField fx:id="password" focusTraversable="false" layoutX="61.0" layoutY="226.0" onAction="#login" prefWidth="200.0" promptText="Password" styleClass="field_password" stylesheets="@../css/login_style.css" />
+            <Button fx:id="btnLogin" layoutX="60.0" layoutY="274.0" mnemonicParsing="false" onAction="#login" prefWidth="200.0" styleClass="login_btn" stylesheets="@../css/login_style.css" text="Login" />
+            <Button fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" mnemonicParsing="false" onAction="#close" prefHeight="15.0" prefWidth="30.0" styleClass="close" stylesheets="@../css/login_style.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="CLOSE" size="1.25em" textAlignment="CENTER" wrappingWidth="36.45724105834961" />
+               </graphic>
+            </Button>
+            <FontAwesomeIcon iconName="USER" layoutX="40.0" layoutY="206.5" />
+            <FontAwesomeIcon iconName="LOCK" layoutX="40.0" layoutY="245.5" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

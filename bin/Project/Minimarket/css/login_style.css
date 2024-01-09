@@ -1,0 +1,46 @@
+.left-form{
+    -fx-background-color: linear-gradient(#70b3ff, #117af2, #2243fd);
+    -fx-background-radius: 0 0 100 0;
+}
+
+.right-form{
+    -fx-background-color: #FFFFFF;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover{
+    -fx-background-color: #FF0000;
+}
+
+.label_login{
+    -fx-text-fill: linear-gradient(#5276e1, #547fff, #fa1d1d);
+}
+
+.field_username{
+    -fx-border-color: #4270f9;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+    -fx-background-color: transparent;
+    -fx-text-fill: #2D5FFA;
+}
+
+.field_password{
+    -fx-border-color: #4270f9;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+    -fx-background-color: transparent;
+    -fx-text-fill: #2D5FFA;
+}
+
+.login_btn{
+    -fx-background-color: linear-gradient(#70b3ff, #117af2, #2243fd);
+    -fx-background-radius: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
